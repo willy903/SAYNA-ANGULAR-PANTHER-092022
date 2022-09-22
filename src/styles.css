@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: beyeno;
+    src: url("police/BEYNO.ttf");
+}
+
+@font-face {
+    font-family: Panthera;
+    src: url("police/PantheraRegular-MVZ9J.ttf");
+}
+
+@font-face {
+    font-family: Cantarell_Regular;
+    src: url("police/Cantarell-Regular.ttf");
+}
+
+@font-face {
+    font-family: wakandaForever;
+    src: url("police/WakandaForever-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("assets/IllustrationsLogo/Allpages/arrière_plan.png"), radial-gradient(126.67% 350.28% at -21.35% 0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%, rgba(2, 23, 64, 0) 100%);
+    background-position: left top, left 30%;
+    background-size: cover, 0%;
+    background-repeat: no-repeat, no-repeat;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,34 @@
+.bloc-aside {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    margin: 0%;
+    margin-left: 4px;
+    position: fixed;
+    top: -20px;
+    left: 3%;
+    border-left: 4px solid #9E91B7;
+    width: 30px;
+    z-index: 4;
+}
+
+.band-right {
+    padding-top: 260px;
+    border-right: 4px solid #9E91B7;
+}
+
+.asideleft .iconesAssideLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 4px;
+}
+
+.iconesAssideLeft {
+    width: 30px;
+    text-align: center;
+}
+
+.iconesAssideLeft img:hover {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(64%) saturate(2%) hue-rotate(210deg) brightness(110%) contrast(100%);
+}

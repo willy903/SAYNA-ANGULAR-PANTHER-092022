@@ -1,0 +1,49 @@
+a {
+    text-decoration: none;
+}
+
+header {
+    margin-top: 15px;
+}
+
+header .container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+header .container .grp-navigation a {
+    font-family: "beyeno", sans-serif;
+    font-size: 17px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header .container .grp-navigation a:hover {
+    text-decoration: underline;
+}
+
+.grp-logohead {
+    display: flex;
+    flex-direction: row;
+}
+
+.grp-logohead a {
+    line-height: 30px;
+}
+
+.grp-logohead:hover {
+    filter: brightness(0) saturate(100%) invert(68%) sepia(8%) saturate(1073%) hue-rotate(219deg) brightness(88%) contrast(81%);
+}
+
+.link {
+    color: white;
+}
+
+.active {
+    text-decoration: underline;
+    color: #9e91b7;
+}

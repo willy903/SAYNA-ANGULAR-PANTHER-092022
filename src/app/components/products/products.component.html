@@ -1,0 +1,15 @@
+<div class="container-fluid d-flew flex-row">
+    <div class="row row-cols-3 gap-5 text-center">
+        <ng-container *ngFor="let productItem of products">
+            <div class="product bg-dark">
+                <div class="item imgArt">
+                    <img [src]="productItem.imageUrl" width="300px">
+                </div>
+                <div class="item py-3">
+                    <h5 class="card-title text-white">{{ productItem.Nom_A | uppercase }}</h5>
+                    <h5 class="card-price text-white">{{ productItem.Prix | currency: "EUR" }}</h5>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

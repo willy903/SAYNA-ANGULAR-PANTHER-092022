@@ -1,0 +1,325 @@
+.blackpanther {
+    margin-top: 2%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.blackpanther .introduction {
+    padding-top: 169px;
+    margin-left: 100px;
+    margin-right: 120px;
+    height: 100vh;
+}
+
+.blackpanther .introduction h1 {
+    font-family: Panthera;
+    display: block;
+    font-size: 52px;
+    color: #DF99F2;
+}
+
+.blackpanther .introduction h2 {
+    font-family: "beyeno", sans-serif;
+    font-size: 32px;
+    color: #DF99F2;
+    line-height: 50px;
+}
+
+.blackpanther .introduction h2 {
+    font-family: "beyeno", sans-serif;
+    font-size: 32px;
+    color: #DF99F2;
+    line-height: 50px;
+}
+
+.blackpanther .introduction p {
+    font-family: Cantarell_Regular;
+    color: #fff;
+    font-size: 14px;
+}
+
+.blackpanther .introduction p a {
+    text-decoration: underline;
+    margin-top: 20px;
+    color: white;
+    display: block;
+}
+
+
+/* section fin inrouduction */
+
+
+/* slider */
+
+.slider {
+    position: relative;
+    margin-left: 90px;
+    height: 320px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.rond {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #021740;
+    border-radius: 50px;
+    position: absolute;
+    left: 95%;
+    top: 40%;
+    z-index: 4;
+    font-size: 29px;
+    font-size: 700;
+    color: white;
+    border: none;
+}
+
+.conteneur_slider {
+    display: flex;
+    flex-direction: row;
+    transition: 800ms;
+}
+
+.slide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    background-color: #07338C;
+    width: 520px;
+    height: 280px;
+}
+
+.slide .leftcard img {
+    width: 240px;
+    height: 280px;
+}
+
+.slide .Rightcard {
+    margin: 12px;
+    padding-top: 15px;
+    width: 260px;
+}
+
+.slide .Rightcard h1 {
+    font-family: beyeno;
+    font-size: 25px;
+    color: #DF99F2;
+}
+
+.slide .Rightcard p {
+    font-family: Cantarell_Regular;
+    color: #fff;
+    font-size: 12px;
+}
+
+.slide .Rightcard a {
+    font-family: Cantarell_Regular;
+    color: #fff;
+    font-size: 14px;
+    padding-top: 4px;
+    text-decoration: underline;
+}
+
+
+/* fin slider */
+
+.container-gazet {
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.container-gazet .conten1 {
+    width: 60%;
+}
+
+.conten1 h1 {
+    font-family: beyeno;
+    color: #DF99F2;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+.conten1 p {
+    font-family: Cantarell_Regular;
+    padding-top: 20px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.container-gazet .conten2 {
+    padding-left: 20%;
+}
+
+
+/* card */
+
+.conten2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.card {
+    width: 350px;
+    height: 118vh;
+}
+
+.card .pdp-chala {
+    width: 310px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 4;
+    padding-bottom: 15px;
+}
+
+.card .pdp-chala img {
+    width: 310px;
+}
+
+.conten2 .container {
+    position: relative;
+    top: -293px;
+    width: 350px;
+    height: 675px;
+    background: rgb(255, 255, 255);
+    z-index: 0;
+    border-radius: 20px;
+    color: #0B0B0B;
+    padding-top: 275px;
+}
+
+.conten2 .container .description {
+    width: 315px;
+    margin: 0 auto;
+}
+
+.description h1 {
+    text-align: center;
+    padding: 8px;
+    font-family: Cantarell_Regular;
+    font-size: 30px;
+}
+
+.description .palmares {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.description .palmares button {
+    padding-left: 12px;
+    padding-right: 12px;
+    line-height: 40px;
+    border-radius: 10px;
+    outline: none;
+    background-color: #3D2DA6;
+    border: none;
+    color: #fff;
+    font-family: Cantarell_Regular;
+}
+
+.description h2 {
+    font-family: Cantarell_Regular;
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+.description h2 span {
+    font-weight: 600;
+}
+
+.conten2 .container img {
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+}
+
+
+/* contact us */
+
+.contact-us {
+    background-image: url("../../../assets/IllustrationsLogo/Accueil/Pantherhome7.png");
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.form_conatctus {
+    text-align: center;
+    margin: auto;
+    width: 858px;
+    height: 631px;
+    color: white;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8547794117647058) 25%, rgba(255, 255, 255, 0.35898109243697474) 51%, rgba(166, 166, 166, 0.227328431372549) 96%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+}
+
+.form_conatctus button:hover {
+    box-shadow: 0px 0px 10px #021740;
+}
+
+.form_conatctus form input,
+.form_conatctus form textarea {
+    display: block;
+    outline: none;
+    padding-left: 42px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    border: 1px solid black;
+    color: #021740;
+    border-radius: 50px;
+    width: 400px;
+    margin-top: 30px;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.form_conatctus form textarea {
+    padding-left: 50px;
+}
+
+.form_conatctus form h3 {
+    font-family: Cantarell_Regular;
+    text-align: center;
+    font-weight: 200;
+    font-size: 14px;
+    color: #021740;
+}
+
+.form_conatctus form h1 {
+    font-family: Cantarell_Regular;
+    text-align: center;
+    font-size: 40px;
+    color: #021740;
+}
+
+.form_conatctus button {
+    line-height: 50px;
+    margin-top: 33px;
+    width: 174px;
+    height: 54px;
+    border-radius: 38px;
+    outline: none;
+    font-family: beyeno;
+    border: none;
+    background-color: #F2CEF2;
+}

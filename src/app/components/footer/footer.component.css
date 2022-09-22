@@ -1,0 +1,144 @@
+footer {
+    width: 100%;
+    height: 480px;
+    background-image: linear-gradient(180deg, #3D2DA6 0%, #021740 90.43%);
+    background-position: top left;
+    background-size: cover;
+}
+
+.containeur-footer {
+    font-family: cantarell;
+    color: white;
+    display: flex;
+    padding-top: 56px;
+}
+
+.foot_sayna-contsayna {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.contenu {
+    width: 350px;
+}
+
+.contenu h1 {
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+.contenu p {
+    padding-bottom: 10px;
+    color: white;
+}
+
+.contenu p a {
+    color: white;
+}
+
+.contenu p:hover {
+    text-decoration: underline;
+}
+
+.ajust-contenu1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.grp-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.heroprotecteur {
+    display: none;
+}
+
+.nav-footer h3 {
+    margin-top: 40px;
+    color: white;
+}
+
+.nav-footer h3 a {
+    color: white;
+    font-size: 16px;
+}
+
+.nav-footer h3 a:hover {
+    text-decoration: underline;
+}
+
+.nav-footer h2 a:hover {
+    text-decoration: underline;
+}
+
+.nav-footer h2 a {
+    color: white;
+    font-size: 16px;
+}
+
+.ajust-contenu1 {
+    font-family: cantarell;
+    padding-top: 20px;
+}
+
+.nav-footer p {
+    margin-top: 8px;
+    color: white;
+}
+
+.nav-footer p {
+    margin-top: 8px;
+    color: white;
+}
+
+.nav-footer p a {
+    color: white;
+}
+
+.grp-btn img:hover {
+    transform: scale(1.1);
+}
+
+.footfacebook img,
+.loginstagram img,
+.foottwitter img,
+.logtk img {
+    margin: 7px 7px;
+}
+
+.Pzoom {
+    margin: 30px;
+    background: url("../../../assets/IllustrationsLogo/Allpages/footer1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 325px;
+    display: flex;
+    align-items: center;
+    transition: 500ms;
+}
+
+.Pzoom .saynalogo {
+    margin-left: 50px;
+}
+
+.Pzoom:hover {
+    transform: scale(1.1);
+}
+
+.droit p {
+    width: 50%;
+}
