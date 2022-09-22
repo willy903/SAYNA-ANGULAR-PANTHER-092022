@@ -3,7 +3,7 @@
         <ng-container *ngFor="let productItem of products">
             <div class="product bg-dark">
                 <div class="item imgArt">
-                    <img [src]="productItem.imageUrl" width="300px">
+                    <img [src]="productItem.imageUrl" width="300px" [routerLink]="['/singleproduct', productItem.id]">>
                 </div>
                 <div class="item py-3">
                     <h5 class="card-title text-white">{{ productItem.Nom_A | uppercase }}</h5>

@@ -10,6 +10,7 @@ import { EshopComponent } from './components/eshop/eshop.component';
 import { MonCompteComponent } from './components/mon-compte/mon-compte.component';
 import { ProductsComponent } from './components/products/products.component';
 import { SingleProductComponent } from './components/single-product/single-product.component';
+import { PanierComponent } from './components/panier/panier.component';
 
 const routes: Routes = [
   { path: 'home', component: LandingComponent},
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'eshop', component: EshopComponent},
   { path: 'moncompte', component: MonCompteComponent},
   { path: 'product', component: ProductsComponent},
-  { path: 'singleproduct', component: SingleProductComponent}
+  { path: 'singleproduct/:productId', component: SingleProductComponent},
+  { path: 'panier', component: PanierComponent}
 ];
 
 @NgModule({
