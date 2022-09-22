@@ -16,6 +16,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { CartComponent } from './components/cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SingleProductComponent } from './components/single-product/single-product.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SingleProductComponent } from './components/single-product/single-produ
     MonCompteComponent,
     ProductsComponent,
     CartComponent,
-    SingleProductComponent
+    SingleProductComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
