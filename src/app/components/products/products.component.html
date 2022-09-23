@@ -9,7 +9,7 @@
                     <h5 class="card-title text-white">{{ productItem.Nom_A | uppercase }}</h5>
                     <h5 class="card-price text-white">{{ productItem.Prix | currency: "EUR" }}</h5>
                 </div>
-                <app-button text="Ajouer au panier" class="w-100" (click)="addToPanier(productItem)"></app-button>
+                <app-button cls="btn-reg m-2" text="Ajouer au panier" class="w-100" (click)="addToPanier(productItem)"></app-button>
             </div>
         </ng-container>
     </div>

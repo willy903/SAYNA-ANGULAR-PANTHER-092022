@@ -33,3 +33,25 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
+.btn-reg {
+    height: 50px;
+    border-radius: 30px;
+    padding: 12px;
+    outline: none;
+    border-radius: 38px;
+    border: none;
+    background-color: #9E91B7;
+    font-family: beyeno;
+    color: #2d245c
+}
+
+.btnAjout {
+    border-image: linear-gradient(160deg, hsl(0deg, 0%, 60%), hsl(198deg, 80%, 28%)) 1;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+}

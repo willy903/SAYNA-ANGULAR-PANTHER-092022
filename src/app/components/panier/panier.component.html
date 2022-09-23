@@ -53,17 +53,15 @@
         </div>
 
         <section class="container container-largeur d-flex justify-content-end mx-auto my-5">
-            <app-button cls="achat mx-2 px-3" text="Continuer mes achats" routerLink="/e-shop"></app-button>
-            <app-button cls="achat mx-2 px-3" text="Passer commande" routerLink="commande">
-
+            <app-button cls="btn-reg mx-2 px-3" text="Continuer mes achats" routerLink="/eshop"></app-button>
+            <app-button cls="btn-reg mx-2 px-3" text="Passer commande" routerLink="/commande">
             </app-button>
-
         </section>
     </ng-container>
     <br><br>
     <div class="container container-largeur containairPanier my-5" *ngIf="productAdd == 0">
         <h1 class="text-center">Ton panier est vide</h1>
         <div class="container-largeur text-center">
-            <app-button cls="achat mx-2 px-3" text="Faire des Achats" routerLink="/eshop"></app-button>
+            <app-button cls="btn achat mx-2 px-3" text="Faire des Achats" routerLink="/eshop"></app-button>
         </div>
     </div>

@@ -11,16 +11,19 @@ import { MonCompteComponent } from './components/mon-compte/mon-compte.component
 import { ProductsComponent } from './components/products/products.component';
 import { SingleProductComponent } from './components/single-product/single-product.component';
 import { PanierComponent } from './components/panier/panier.component';
+import { CommandeComponent } from './components/commande/commande.component';
 
 const routes: Routes = [
   { path: 'home', component: LandingComponent},
+  { path: '', component: LandingComponent},
   { path: 'wakanda', component: WakandaComponent},
   { path: 'enigme', component: EnigmeComponent},
   { path: 'eshop', component: EshopComponent},
   { path: 'moncompte', component: MonCompteComponent},
   { path: 'product', component: ProductsComponent},
   { path: 'singleproduct/:productId', component: SingleProductComponent},
-  { path: 'panier', component: PanierComponent}
+  { path: 'panier', component: PanierComponent},
+  { path: 'commande', component: CommandeComponent}
 ];
 
 @NgModule({

@@ -18,6 +18,7 @@ export class PanierComponent implements OnInit {
       this.productAdd = res;
       this.grandTotal = 0;
     this.productAdd.forEach((item:any) => {
+      this.grandTotal += +item.Prix;
     });
     });
     
