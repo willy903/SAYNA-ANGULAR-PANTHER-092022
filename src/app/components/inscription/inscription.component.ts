@@ -50,7 +50,7 @@ export class InscriptionComponent implements OnInit {
    .subscribe((res)=>{
     alert('C\'est bien enregistre');
     this.signupForm.reset();
-    this.router.navigateByUrl('connection');
+    this.router.navigateByUrl('moncompte');
    });
   }
 }
