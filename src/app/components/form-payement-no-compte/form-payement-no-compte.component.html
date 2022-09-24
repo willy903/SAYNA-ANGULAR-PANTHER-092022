@@ -1,0 +1,178 @@
+<div class="container mt-5">
+    <div class="w-90">
+        <div class="row">
+            <div class="d-flex justify-content-between">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active">
+                            <a routerLink="/eshop">Eshop</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+
+                            <a routerLink="/panier">Révaputilatif de commande</a>
+
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+
+                            Payement
+
+                        </li>
+                    </ol>
+
+                </nav>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <form [formGroup]="payeForm" (ngSubmit)="validPaye()">
+                    <h1 class="text-white txt-p pt-5">Livraison</h1>
+                    <div class="divider"></div>
+
+                    <div class="row mt-3 mb-4">
+                        <div class="col">
+                            <span class="txt-f">Selectionner un moyen de payement</span>
+
+                            <div class="form-check mt-3">
+                                <input class="form-check-input p-auto" value="chronopost" type="radio" formControlName="typeLivraison" name="typeLivraison" id="flexRadioDefault1">
+                                <label class="form-check-label" for="chronopost">
+                                        <img src="../../../assets/IllustrationsLogo/Allpages/livraison.svg" class="orange" alt="" srcset=""><span class="ms-1">Livraison à domicile 3 à 4 jours </span>      
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input p-auto" type="radio" value="'dhl'" type="radio" name="typeLivraison" formControlName="typeLivraison" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                        <img src="../../../assets/IllustrationsLogo/Allpages/dhl.svg" width="30"  alt="" srcset=""><span class="ms-2">Livraison à domicile 3 à 4 jours </span>      
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input p-auto" type="radio" value="fedex" type="radio" name="typeLivraison" formControlName="typeLivraison" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                        <img src="../../../assets/IllustrationsLogo/Allpages/fedex.svg" width="30" alt="" srcset=""><span class="ms-2">Livraison à point 3 à 8 jours </span>     
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="nom" class="py-2">Nom</label>
+                            <input [ngClass]="{
+                                'is-invalid':
+                                    payeForm.get('nom')?.touched && payeForm.get('nom')?.invalid
+                            }" formControlName="nom" type="text" id="nom" class="form-control" placeholder="Jan">
+                        </div>
+                        <div class="col">
+                            <label for="prenom" class="py-2">Prénom</label>
+                            <input [ngClass]="{
+                                'is-invalid':
+                                    payeForm.get('prenom')?.touched && payeForm.get('prenom')?.invalid
+                            }" formControlName="prenom" type="text" id="prenom" class="form-control" placeholder="Doe">
+                        </div>
+                        <div class="row p-0 m-0">
+                            <div class="col">
+                                <label for="adresse" class="py-2">Adresse</label>
+                                <input [ngClass]="{
+                                    'is-invalid':
+                                        payeForm.get('adresse')?.touched && payeForm.get('adresse')?.invalid
+                                }" formControlName="adresse" type="text" id="adresse" class="form-control" placeholder="ex: Analakely">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="cp" class="py-2">Code postal</label>
+                            <input [ngClass]="{
+                                'is-invalid':
+                                    payeForm.get('cp')?.touched && payeForm.get('cp')?.invalid
+                            }" formControlName="cp" type="text" id="cp" class="form-control" placeholder="ex:101">
+                        </div>
+                        <div class="col">
+                            <label for="ville" class="py-2">Ville</label>
+                            <input [ngClass]="{
+                                'is-invalid':
+                                    payeForm.get('ville')?.touched && payeForm.get('ville')?.invalid
+                            }" formControlName="ville" type="text" id="ville" class="form-control" placeholder="ex:Antananrivo">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputState" class="py-2">Pays</label>
+                        <select id="inputState" formControlName="state" class="form-control">
+                          <option selected ngValue="madagascar">Madagascar</option>
+                          <option ngValue="cameroun">Cameroun</option>
+                          <option ngValue="cote d'ivoire">Cote d'ivoire</option>
+                          <option ngValue="algerie">Algerie</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="row p-0 m-0">
+                            <div class="col">
+                                <label for="tel" class="py-2">Numéro téléphone</label>
+                                <input [ngClass]="{
+                                    'is-invalid':
+                                        payeForm.get('tel')?.touched && payeForm.get('vel')?.invalid
+                                }" formControlName="tel" required type="text" id="tel" class="form-control" placeholder="ex: 00 00 00 00 00">
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="text-white txt-p pt-5">Payement</h1>
+                    <div class="divider"></div>
+                    <div class="row mt-3 mb-4">
+                        <div class="col-6">
+                            <span class="txt-f">Selectionner un moyen de payement</span>
+                        </div>
+                        <div class="col-6 gap-2">
+                            <input type="radio" formControlName="typePaye" name="typePaye" value="paypal"><i class="fa-brands fa-2xl m-2 fa-cc-paypal text-primary"></i>
+                            <input type="radio" formControlName="typePaye" name="typePaye" value="visa"><i class="fa-brands fa-2xl m-2 fa-cc-visa text-white"></i>
+                            <input type="radio" formControlName="typePaye" name="typePaye" value="stripe"><i class="fa-brands fa-2xl m-2 fa-cc-stripe text-orange"></i>
+                            <input type="radio" formControlName="typePaye" name="typePaye" value="mastercard"><i class="fa-brands fa-2xl m-2 fa-cc-mastercard text-white"></i>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row p-0 m-0">
+                            <div class="col">
+                                <label for="numCarte" class="py-2">Numéro la carte</label>
+                                <input [ngClass]="{
+                                    'is-invalid':
+                                        payeForm.get('numCarte')?.touched && payeForm.get('numCarte')?.invalid
+                                }" formControlName="numCarte" required type="text" id="numCarte" class="form-control" placeholder="ex: 00 00 00 00 00 00 00">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="cvv" class="py-2">Cvv</label>
+                            <input [ngClass]="{
+                                'is-invalid':
+                                    payeForm.get('cvv')?.touched && payeForm.get('cvv')?.invalid
+                            }" formControlName="cvv" type="text" required id="cvv" class="form-control" placeholder="ex: XXXX">
+                        </div>
+                        <div class="col">
+                            <label for="dateExp" class="py-2">Date d'éxpiration</label>
+                            <input [ngClass]="{
+                                'is-invalid':
+                                    payeForm.get('dateExp')?.touched && payeForm.get('dateExp')?.invalid
+                            }" formControlName="dateExp" type="date" id="dateExp" class="form-control" placeholder="">
+                        </div>
+                        <div class="row p-0 m-0">
+                            <div class="col">
+                                <label for="nomCarte" class="py-2">Nom sur la carte</label>
+                                <input [ngClass]="{
+                                    'is-invalid':
+                                        payeForm.get('nomCarte')?.touched && payeForm.get('nomCarte')?.invalid
+                                }" formControlName="nomCarte" type="text" id="nomCarte" class="form-control" placeholder="ex: Jan Doe">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-2">
+                        <span class="txt-f"><i class="fa-sharp fa-solid fa-circle text-danger"></i> L'adresse de la facturation est la même que l'adresse de livraison</span>
+                    </div>
+                    <div class="row py-2 justify-content-center">
+                        <button type="submit" class="btn btn-success" style="width: 250px;">Valider</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <app-product-order></app-product-order>
+            </div>
+        </div>
+    </div>
+</div>

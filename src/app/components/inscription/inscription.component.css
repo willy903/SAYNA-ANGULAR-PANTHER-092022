@@ -1,0 +1,12 @@
+.formulaire {
+    max-width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    background: rgb(43, 60, 98);
+    background: linear-gradient(90deg, rgba(43, 60, 98, 0.8603816526610644) 0%, rgba(13, 0, 102, 0.969625350140056) 53%);
+}
+
+.form {
+    padding: 15px;
+    border-radius: 10px;
+}

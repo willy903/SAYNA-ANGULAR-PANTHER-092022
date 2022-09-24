@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { BarNavComponent } from './components/bar-nav/bar-nav.component';
@@ -18,6 +20,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { SingleProductComponent } from './components/single-product/single-product.component';
 import { ButtonComponent } from './components/button/button.component';
 import { CommandeComponent } from './components/commande/commande.component';
+import { ConnexionComponent } from './components/connexion/connexion.component';
+import { InscriptionComponent } from './components/inscription/inscription.component';
+import { ModeAchatComponent } from './components/mode-achat/mode-achat.component';
+import { FormPayementNoCompteComponent } from './components/form-payement-no-compte/form-payement-no-compte.component';
+import { ProductOrderComponent } from './components/product-order/product-order.component';
+import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
@@ -35,12 +43,20 @@ import { CommandeComponent } from './components/commande/commande.component';
     CartComponent,
     SingleProductComponent,
     ButtonComponent,
-    CommandeComponent
+    CommandeComponent,
+    ConnexionComponent,
+    InscriptionComponent,
+    ModeAchatComponent,
+    FormPayementNoCompteComponent,
+    ProductOrderComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,20 @@
+label,
+.txt-f {
+    color: rgb(209, 207, 207);
+}
+
+.txt-p {
+    font-size: 20px;
+}
+
+.divider {
+    border: 1px solid rgb(136, 136, 136);
+}
+
+.text-orange {
+    color: rgb(206, 99, 0);
+}
+
+.orange {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(63%) saturate(1607%) hue-rotate(11deg) brightness(98%) contrast(103%);
+}

@@ -1,0 +1,26 @@
+.imgProd {
+    width: 160px;
+}
+
+div {
+    color: white;
+}
+
+.champAjout {
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.bg-violet {
+    background: rgb(51, 43, 98);
+    background: linear-gradient(38deg, rgba(51, 43, 98, 0.8603816526610644) 6%, rgba(2, 23, 64, 0.9640231092436975) 100%);
+}
+
+h1 {
+    font-family: Cantarell_Regular;
+    font-size: 18px;
+    font-weight: 600;
+}

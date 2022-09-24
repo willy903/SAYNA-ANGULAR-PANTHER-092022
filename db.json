@@ -182,5 +182,64 @@
       "Poids": null,
       "Capacité": null
     }
+  ],
+  "user": [
+    {
+      "nom": "heriniaina",
+      "prenom": "willy",
+      "email": "willyjacquino@gmail.com",
+      "password": "1234",
+      "confirmPassword": "1234",
+      "id": 1
+    }
+  ],
+  "achatSansCompte": [
+    {
+      "typeLivraison": "'dhl'",
+      "nom": "heriniaina",
+      "prenom": "willy",
+      "adresse": "cité nouvelle duplex partielle 32/11 logement 6",
+      "cp": "501",
+      "ville": "TAMATAVE",
+      "tel": "0342812462",
+      "numCarte": "11111111111111",
+      "nomCarte": "A",
+      "cvv": "1111",
+      "dateExp": "2022-09-22",
+      "state": "madagascar",
+      "id": 1
+    },
+    {
+      "typeLivraison": "chronopost",
+      "nom": "heriniaina",
+      "prenom": "willy",
+      "adresse": "cité nouvelle duplex partielle 32/11 logement 6",
+      "cp": "501",
+      "ville": "TAMATAVE",
+      "tel": "0342812462",
+      "numCarte": "11111111111111",
+      "nomCarte": "b",
+      "cvv": "1111",
+      "dateExp": "2022-09-01",
+      "state": "madagascar",
+      "typePaye": "paypal",
+      "id": 2
+    },
+    {
+      "typeLivraison": "chronopost",
+      "nom": "heriniaina",
+      "prenom": "willy",
+      "adresse": "cité nouvelle duplex partielle 32/11 logement 6",
+      "cp": "501",
+      "ville": "TAMATAVE",
+      "tel": "0342812462",
+      "numCarte": "111111111111",
+      "nomCarte": "winy",
+      "cvv": "1111",
+      "dateExp": "2022-09-15",
+      "state": "cameroun",
+      "typePaye": "paypal",
+      "id": 3
+    }
   ]
 }
